@@ -1,0 +1,172 @@
+<html>
+<head>
+<title>Shark Attacks in US </title>
+
+<style>
+body {
+    background-color: #484d7e;
+    }
+#pagediv {
+    margin: auto;
+    width: 80%;
+    background-color:#8cbada;
+    }
+#headerdiv {
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    padding: 5px 0 5px 0;
+    }
+#contentdiv {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 5px 15px 40px 15px;
+    }
+h1 {
+    color: #8cbada ;
+    text-align: center;
+    font-family: verdana;}
+h2{
+	color:  #484d7e;    
+	font-style: bold;
+  font-family: verdana;
+
+}
+
+h3 {
+    color: #8cbada;
+    text-align: center;
+    font-family: verdana;
+    font-style: italic;
+}
+
+
+h4 {
+    color: white;
+    text-align: center;
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+h5 {
+    color: #1a4727;
+    text-align: left;
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+ul, li {
+    font-family: verdana;
+color:#1a4727;
+}
+p {font-family: verdana;
+color: white;}
+
+p2{font-family: verdana;
+color: #1a4727;}
+
+h6{
+    color: #cbd87b;
+    text-align: left;
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 20px;
+}
+p3{font-family: verdana;
+color:#cbd87b;}
+
+
+</style>
+
+</head>
+
+<body>
+
+<div id="pagediv">
+
+    <div id="headerdiv">
+        <h1>Shark Attacks in United States (2006-2016)</h1>
+        <h3> By: Lindsay polaski </h3>
+    </div>
+
+    <div id="contentdiv">
+        <h4>Mapping and analyzing shark attcks in the U.S. </h4>
+ <h2>Pre-Reading Quiz: </h2>
+
+
+
+<img src="shark.png" alt="Picture of Shark" />
+
+<p id="demo">Before reading and looking at the map, guess what state had the most shar attacks in the United States from 2006-2016?</p>
+<button type="button" onclick="myFunction()">Click here for the answer</button>
+
+<script>
+function myFunction() {
+ document.getElementById("demo").innerHTML = "Florida!";
+ document.getElementById("demo").style.fontSize = "35px";
+document.getElementById("demo").style.color = "#1a4727";
+document.getElementById("demo").style.fontfamily = verdana;
+}
+</script>
+
+ <h2>Interactive Map and Data: </h2>
+
+<div id="map" style="width:100%; height:500px;"></div>
+
+<link href="mapbox://styles/lindsaypo/cmm2dziyf000501rd10j8fw20" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js"></script>
+
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoibGluZHNheXBvIiwiYSI6ImNtbHM5c3lzbzA0N2IzZHBzMW11aTFpcTgifQ.4pIBAmflFwF-QakFcoW0Lw';
+
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/lindsaypo/cmm2dziyf000501rd10j8fw20',
+    center: [-104.942114, 39.717785],
+    zoom: 11
+});
+</script>
+
+
+
+
+
+
+<h2>Analysis: </h2>
+        <p>Based on the data collected from ground surveys on <a href='https://www.sharkattackdata.com/place/united_states_of_america'>United States Shark Attack Data</a>, we see many different trends and patterns. 
+
+
+
+
+<h5>🐊Florida: </h5>
+<p2>The first trend we notice is the high concentration of shark attacks in the state of Florida with 85 attacks in New Smyrna Beach, Volusia County alone. As a result, we see New Smyrna Beach, Volusia County had the most shark attack incidents in the entire country from 2006-2016. The vast majority of these attacks were non-fetal. 
+ </p2>
+
+<p2>We can make a few assumptions as to why this is:</p2>
+
+    <ul>
+<li>This is a popular beach, with its location just an hour from Orlando. As a result, more people attending the beach means more likelihood of an attack. </li>
+<li>In the shallow, warm waters of the Atlantic, sharks feel more regulated with their body temperature. This generally means more sharks are likely to hang out at warmer beaches. There might be more sharks located at this beach compared to the other beaches, resulting in more attacks. </li>
+</ul>
+
+<p2> In the state of Florida, surfing is the most common activity associated with shark attacks, followed by wading and swimming. While surfing is the predominant activity preceding shark attacks in Florida, patterns observed in Hawaii deviate from this trend. </p2>
+
+
+
+<h6>🌊 California: </h6>
+
+<p3>San Onofre State Beach is the most frequently recorded location for shark attacks in California, followed by Huntington Beach and Santa Cruz. Although fatal incidents account for only 1.2% of all shark attacks reported in the United States between 2006 and 2016, California represents a disproportionate share of those cases. Of the six fatal attacks documented nationwide during this period, three occurred in California, with two of those incidents taking place at Surf Beach. </p3>
+
+
+
+ <h2>Results:</h2>
+        <p>After looking at the interactive map, we can see Florida has the most shark attacks with New Smyrna Beach being the home to the highest concentration of shark attacks in the United States from 2006-2016. </p>
+    </div>
+
+</div>
+
+</body>
+</html>
